@@ -4,5 +4,10 @@ classic.json*
 modern.json*
 /.sencha
 
+# sencha cmd error logs
+sencha-error-*
+# package-level build directories
+/packages/local/*/build
+
 # Symlinked or copied ext directory
 /ext
