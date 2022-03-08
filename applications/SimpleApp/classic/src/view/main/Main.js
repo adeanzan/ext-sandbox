@@ -13,6 +13,8 @@ Ext.define('SimpleApp.view.main.Main', {
         'Ext.plugin.Viewport',
         'Ext.window.MessageBox',
 
+        'Corp.common.form.field.RequiredTextField',
+
         'SimpleApp.view.main.MainController',
         'SimpleApp.view.main.MainModel',
         'SimpleApp.view.main.List'

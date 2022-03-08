@@ -8,8 +8,6 @@ Ext.application({
     name: 'SimpleApp',
 
     requires: [
-        'Corp.common.form.field.RequiredTextField',
-
         // This will automatically load all classes in the SimpleApp namespace
         // so that application classes do not need to require each other.
         'SimpleApp.*'
