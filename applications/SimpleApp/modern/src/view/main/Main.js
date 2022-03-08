@@ -9,7 +9,9 @@ Ext.define('SimpleApp.view.main.Main', {
 
     requires: [
         'Ext.MessageBox',
-        'Ext.layout.Fit'
+        'Ext.layout.Fit',
+
+        'Corp.common.field.RequiredText'
     ],
 
     controller: 'main',
@@ -30,6 +32,10 @@ Ext.define('SimpleApp.view.main.Main', {
                 {
                     xtype: 'panel',
                     html: 'Some content on the modern home page'
+                },
+                {
+                    xtype: 'corp-requiredtextfield',
+                    label: 'Example Required Text Field',
                 }
             ]
         }
