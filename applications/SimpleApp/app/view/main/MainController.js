@@ -7,13 +7,11 @@ Ext.define('SimpleApp.view.main.MainController', {
 
     alias: 'controller.main',
 
-    onItemSelected: function (sender, record) {
-        Ext.Msg.confirm('Confirm', 'Are you sure?', 'onConfirm', this);
-    },
+    showComboBoxRemoteTest: function () {
+        this.getView().removeAll();
 
-    onConfirm: function (choice) {
-        if (choice === 'yes') {
-            //
-        }
-    }
+        this.getView().add(Ext.create('SimpleApp.view.main.ComboBoxRemoteTestView', {
+
+        }));
+    },
 });

@@ -17,18 +17,30 @@ Ext.define('SimpleApp.view.main.Main', {
 
         'SimpleApp.view.main.MainController',
         'SimpleApp.view.main.MainModel',
-        'SimpleApp.view.main.List'
+        'SimpleApp.view.main.List',
+
+        'SimpleApp.view.main.ComboBoxRemoteTestView',
     ],
 
-    controller: 'main',
+    controller: { xclass: 'SimpleApp.view.main.MainController' },
     viewModel: 'main',
 
     title: 'SimpleApp - Classic',
 
+    tbar: [
+        {
+            xtype: 'button',
+            text: 'Tests',
+            menu: [
+                { text: 'Combo Box - Remote', handler: 'showComboBoxRemoteTest' },
+            ]
+        }
+    ],
+
     items: [
         {
-            xtype: 'corp-requiredtextfield',
-            fieldLabel: 'Example Required Text'
+            xtype: 'panel',
+            html: 'Use the menu above to navigate this application'
         }
     ]
 });
